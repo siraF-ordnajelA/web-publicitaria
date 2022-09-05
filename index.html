@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <title>Madero Cleaner</title>
+   </head>
+   
+   <body>
+   <script src="js/jquery-1.9.1.min.js"></script>  
+   <script>
+      $( document ).ready(function() {
+         //alert("La resolución de tu pantalla es: " + screen.width + " x " + screen.height);
+         
+         var texto;
+         texto = navigator.userAgent;
+         
+         if (texto.indexOf("Mobile") != -1) {
+            //alert("Es un mobile");
+            window.location.href = "mobile.html";
+         }
+         else {
+            //alert("Es una PC");
+            window.location.href = "pc.html";
+         }
+      });
+   </script>
+   </body>
+</html >
